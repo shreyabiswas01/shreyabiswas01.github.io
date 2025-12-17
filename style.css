@@ -1122,11 +1122,17 @@ html, body { height: 100%; scroll-snap-type: y mandatory; scroll-padding-top: va
 
 /* Make Experience sections scrollable within viewport */
 #experience-research .container,
-#experience-leadership .container {
+/* #experience-leadership .container {
   /* height: calc(100vh - var(--nav-h));  /* fit viewport minus navbar */ */
   height: auto;
   overflow-y: auto;                    /* allow vertical scrolling */
   padding-right: 8px;                  /* space so scrollbar doesn’t overlap */
+  box-sizing: border-box;
+} */
+#experience-leadership .container {
+  height: auto;          /* let content decide height */
+  overflow: visible;     /* IMPORTANT: remove internal scrolling */
+  padding-right: 0;      /* scrollbar no longer needed */
   box-sizing: border-box;
 }
 
