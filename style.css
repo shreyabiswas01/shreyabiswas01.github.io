@@ -1385,3 +1385,20 @@ html, body { height: 100%; scroll-snap-type: y mandatory; scroll-padding-top: va
 #skills .container{
   padding-bottom: 88px; /* ~footer height; adjust if needed */
 }
+
+
+/* === FIX: Let Research Experience grow naturally === */
+#experience-research {
+  height: auto !important;          /* override 100vh */
+  min-height: unset !important;
+  overflow: visible !important;     /* stop clipping */
+  display: block !important;        /* cancel flex trapping */
+  scroll-snap-align: unset !important;
+  scroll-snap-stop: unset !important;
+}
+
+/* container should also not scroll internally */
+#experience-research .container {
+  height: auto !important;
+  overflow: visible !important;
+}
