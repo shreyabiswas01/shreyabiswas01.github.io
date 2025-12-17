@@ -1156,7 +1156,7 @@ html, body { height: 100%; scroll-snap-type: y mandatory; scroll-padding-top: va
 
 /* Wider Research Experience timeline */
 #experience-research .container {
-  max-width: 1200px;    /* increase width from ~800px */
+  max-width: 1400px;    /* increase width from ~800px */
   padding: 0 var(--space-24);
 }
 
