@@ -1139,7 +1139,7 @@ html, body { height: 100%; scroll-snap-type: y mandatory; scroll-padding-top: va
 /* Optional: style scrollbars for consistency */
 #experience-research .container::-webkit-scrollbar,
 #experience-leadership .container::-webkit-scrollbar {
-  width: 6px;
+  width: 8px;
 }
 #experience-research .container::-webkit-scrollbar-thumb,
 #experience-leadership .container::-webkit-scrollbar-thumb {
